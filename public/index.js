@@ -43,8 +43,8 @@ const currentTemplate = templates.find((element) => element.url.matchAll(pathnam
 async function injectTemplate(origin, template, target, prepend) {
   try {
     const res = origin ?
-      await fetch(`/templates/${origin}/${template}.html`)
-      : await fetch(`/templates/${template}.html`);
+      await fetch(`.public/templates/${origin}/${template}.html`)
+      : await fetch(`.public/templates/${template}.html`);
     const text = await res.text();
     const doc = new DOMParser().parseFromString(text, 'text/html');
     if (doc.querySelector("style")) {
