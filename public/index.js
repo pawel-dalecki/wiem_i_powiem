@@ -1,55 +1,75 @@
 const templates = [
   {
     url: "/",
-    template: "/home/",
+    template: "home",
     title: "",
     description: "",
-    sections: 4
+    templates: 7,
   },
   {
     url: "/blog",
-    template: "/blog",
+    template: "blog",
     title: "blog",
     description: "",
-    sections: 4,
+    templates: 2,
   },
   {
     url: "/blog/*",
-    template: "/article",
+    template: "article",
     title: "blog",
     description: "",
-    sections: 6,
+    templates: 6,
   },
   {
     url: "/polityka-prywatnosci/",
     template: "privacy",
     title: "Polityka prywatnosci",
     description: "",
-    sections: 6,
+    templates: 6,
   },
+  {
+    url: "",
+    template: "404",
+    title: "404 - Strony nie znaleziono",
+    description: "",
+    templates: 2,
+  }
 ]
 
 // Render.
 const pathname = window.location.pathname;
-const currentTemplate = templates.find((element) => element.url.match(pathname));
-render(){
-  for (const s in currentTemplate.sections) {
-    let res;
-    try {
-      res = await fetch('not-a-real-url')
+const currentTemplate = templates.find((element) => element.url.matchAll(pathname)) || templates[4];
+
+async function injectTemplate(origin, template, target, prepend) {
+  try {
+    const res = origin ?
+      await fetch(`/templates/${origin}/${template}.html`)
+      : await fetch(`/templates/${template}.html`);
+    const text = await res.text();
+    const doc = new DOMParser().parseFromString(text, 'text/html');
+    if (doc.querySelector("style")) {
+      const style = doc.querySelector("style");
+      const css_rules = style.sheet.cssRules;
+      for (const rule of css_rules) {
+        document.styleSheets[0].insertRule(rule.cssText)
+      }
     }
-    catch (e) {
-      console.error(e)
+    if (target) {
+      document.querySelector(target).append(...doc.children[0].querySelector("body").children);
+    } else {
+      if (prepend) {
+        document.body.prepend(...doc.children[0].querySelector("body").children);
+      } else {
+        document.body.append(...doc.children[0].querySelector("body").children);
+      }
     }
-    try {
-      document.body.append(await res.text());
-    }
-    catch (e) {
-      console.log(e);
-    }
-    return
+  } catch (err) {
+    console.error('Failed to fetch page:', err);
   }
 }
-// Meta data.
-//
-await render();
+
+await injectTemplate(undefined, 'header', undefined, true);
+for (let template = 1; template <= currentTemplate.templates; template++) {
+  await injectTemplate(currentTemplate.template, template, "main", false)
+}
+await injectTemplate(undefined, 'footer', undefined, false);

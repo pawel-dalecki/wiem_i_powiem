@@ -1,17 +1,233 @@
-<section class="invert">
-  <section class="double-grid container">
-    <section>
-      <h2>
-        To coś więcej niż tylko narzędzie do obsługi zgłoszeń sygnalistów.
-      </h2>
-      <p>
-        Musisz lub chcesz wdrożyć rozwiązanie umożliwiające sygnalistom
-        zgłaszanie nieprawidłowosci dotyczacych Twojej organizacji?
-        <b>Wiem i Powiem</b> to kompleksowa usługa zapewniąjaca obsługę zgłoszeń
-        sygnalistów.
-        <b>Sprawdź, czy musisz wdrozyć!</b>
-      </p>
-      <button>Sprawdź</button>
+<style>
+  @keyframes ping-with-rotation {
+    from {
+      opacity: 0;
+      transform: rotate(-25deg);
+    }
+
+    to {
+      opacity: 100%;
+      transform: rotate(-90deg);
+    }
+  }
+  @keyframes ping-first {
+    0% {
+      opacity: 25%;
+    }
+
+    25% {
+      opacity: 100%;
+    }
+
+    50% {
+      opacity: 100%;
+    }
+
+    75% {
+      opacity: 100%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+  @keyframes ping-second {
+    0% {
+      opacity: 25%;
+    }
+
+    25% {
+      opacity: 25%;
+    }
+
+    50% {
+      opacity: 100%;
+    }
+
+    75% {
+      opacity: 100%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+  @keyframes ping-third {
+    0% {
+      opacity: 25%;
+    }
+
+    25% {
+      opacity: 25%;
+    }
+
+    50% {
+      opacity: 25%;
+    }
+
+    75% {
+      opacity: 100%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+  .background {
+    position: relative;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bricks {
+    width: 100%;
+    height: 100%;
+    margin-top: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  .brick {
+    width: 75%;
+    max-width: 448px;
+    height: 128px;
+    display: flex;
+    transform: rotate(15deg) skew(15deg);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: auto;
+    box-shadow: 1em 1em 0 0 rgba(0, 0, 0, 0.25);
+  }
+  .bricks :nth-child(1) {
+    top: 0;
+    z-index: 5;
+    animation: ping-first 1s infinite alternate;
+  }
+  .bricks :nth-child(2) {
+    top: 22.5%;
+    z-index: 5;
+    animation: ping-second 1s infinite alternate;
+  }
+  .bricks :nth-child(3) {
+    top: 45%;
+    z-index: 5;
+    animation: ping-third 1s infinite alternate;
+  }
+  .bricks :nth-child(4) {
+    top: 67.5%;
+    z-index: 999;
+  }
+  .brick.odd {
+    transform: rotate(-15deg) skew(-15deg);
+  }
+  .yellow {
+    background: #f9d044;
+  }
+  .purple {
+    background: #6200ed;
+  }
+  .info {
+    z-index: 200;
+  }
+  .circle {
+    position: absolute;
+    border-radius: 100%;
+    background: #07d9c3;
+    padding: 3em;
+    top: 128px;
+    right: 64px;
+    animation: ping 1s infinite alternate;
+    box-shadow: 1em 1em 0 0 rgba(0, 0, 0, 0.25);
+  }
+  button {
+    background: #07d9c3;
+    color: white;
+    z-index: 50;
+  }
+  .circle.half {
+    top: 95%;
+    animation: ping-with-rotation 1s infinite alternate;
+    width: 4rem;
+    height: 1rem;
+    border-radius: 0em 0em 10em 10em;
+    background: #bb86fb;
+    padding: 1em;
+    left: 50%;
+    transition-duration: 150ms;
+    transition-delay: 75ms;
+    right: auto;
+    transform: rotate(-90deg);
+    box-shadow: -1em 1em 0 0 rgba(0, 0, 0, 0.25);
+  }
+  #first-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  div.photo {
+    margin: 0;
+    top: -7em;
+    height: 640px;
+    width: 512px;
+    position: absolute;
+    z-index: 500;
+    background-size: cover;
+  }
+  div.nauczyciel {
+    background-image: url("./images/nauczyciel.webp");
+  }
+  div.magazynier {
+    background-image: url("./images/magazynier.webp");
+  }
+  div.pracownik-biurowy {
+    background-image: url("./images/pracownik-biurowy.webp");
+  }
+  div.kucharz {
+    background-image: url("./images/kucharz.webp");
+  }
+  div.lekarz {
+    background-image: url("./images/lekarz.webp");
+  }
+</style>
+<section id="first-section" class="inverted">
+  <section class="container">
+    <section class="grid two">
+      <section class="overlay">
+        <div class="circle"></div>
+        <div class="circle half"></div>
+      </section>
+      <section class="info">
+        <img
+          src="/images/logo_on_dark.webp"
+          style="width: 512px; transform: translateX(-20px)"
+        />
+        <h2>
+          To coś więcej niż tylko narzędzie do obsługi zgłoszeń sygnalistów.
+        </h2>
+        <p>
+          Musisz lub chcesz wdrożyć rozwiązanie umożliwiające sygnalistom
+          zgłaszanie nieprawidłowości dotyczących Twojej organizacji?
+        </p>
+        <p>
+          <b>Wiem i Powiem</b> to kompleksowa usługa zapewniająca obsługę
+          zgłoszeń sygnalistów. <b>Sprawdź, czy musisz wdrożyć!</b>
+        </p>
+        <button>Sprawdź</button>
+      </section>
+      <section class="background">
+        <div class="photo magazynier"></div>
+        <section class="bricks">
+          <article class="odd brick yellow"></article>
+          <article class="brick purple"></article>
+          <article class="odd brick yellow"></article>
+          <article class="brick purple"></article>
+        </section>
+      </section>
     </section>
   </section>
 </section>
