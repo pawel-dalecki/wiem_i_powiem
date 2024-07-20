@@ -5,14 +5,14 @@ body {
   font-size: 12px;
   font-family: Montserrat;
 }
+
 header,
 main > section,
 footer {
   padding: 2em 0.5em;
 }
+
 button {
-  border: none;
-  border-radius: 4em;
   cursor: pointer;
   font-family: Montserrat;
   font-weight: 900;
@@ -22,19 +22,23 @@ button {
   font-size: 24px;
   padding: 1em;
 }
+
 button:hover {
   padding-left: 2em;
   padding-right: 2em;
   box-shadow: 1em 1em 0 0 rgba(0, 0, 0, 0.25);
 }
+
 section.invert button {
   background-color: #0dd4be;
   color: white;
 }
+
 .container {
   max-width: 1200px;
   margin: auto;
 }
+
 section.invert {
   background-color: #3700b3;
   color: white;
@@ -48,21 +52,25 @@ h1 {
   color: #f9d044;
   margin: 0.5em 0;
 }
+
 .invert h1 {
   color: white;
 }
+
 h2 {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 32px;
   color: #f9d044;
 }
+
 body {
   margin: 0;
   font-family: Poppins;
   font-weight: 500;
   font-size: 20px;
 }
+
 h1 {
   font-family: Poppins;
   font-weight: 900;
@@ -72,11 +80,13 @@ h1 {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
 h2 {
   font-family: Poppins;
   font-size: 32px;
   color: #f9d044;
 }
+
 .grid {
   display: flex;
   flex-direction: column;
@@ -99,23 +109,27 @@ h2 {
     opacity: 100%;
   }
 }
+
 section.inverted {
   background: #3700b3;
   color: white;
 }
 
 /* Form styling */
+
 form {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
+
 input {
   border-radius: 4em;
   border: none;
   padding: 2em;
   font-weight: 700;
 }
+
 textarea {
   padding: 2em 4em;
   color: white;
@@ -124,6 +138,7 @@ textarea {
   background: transparent;
   font-size: 24px;
 }
+
 input:hover,
 textarea:hover,
 input:focus,
@@ -137,19 +152,24 @@ img {
 }
 
 /* Desktop specific */
+
 @media only screen and (min-width: 600px) {
   .grid {
     display: grid;
   }
+
   .grid.two {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .grid.three {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
   .grid.four {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
   .grid.five {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
