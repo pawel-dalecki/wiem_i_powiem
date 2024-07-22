@@ -1,44 +1,14 @@
-<section class="bg-theme-purple text-white py-32 lg:pb-36">
-  <section
-    class="relative container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-2"
-  >
+<section id="first-section">
+  <section id="first-section-container">
     <section class="absolute inset-0">
-      <div
-        class="rounded-tl-full rounded-tr-full bg-theme-purple-lightest absolute h-12 w-24 rotate-90 -bottom-40 left-1/2"
-      ></div>
-      <div class="rounded-full bg-theme-cyan p-12 absolute right-0 top-0"></div>
+      <div class="circle-half"></div>
+      <div class="circle-full"></div>
     </section>
-    <section class="relative z-50 flex flex-col gap-2">
-      <section class="grid grid-cols-2 lg:flex lg:flex-col gap-2">
-        <section>
-          <img src="/public/images/logo_on_dark.webp" class="w-full lg:w-1/2" />
-          <h2 class="text-theme-yellow">
-            To coś więcej niż tylko narzędzie do obsługi zgłoszeń sygnalistów.
-          </h2>
-        </section>
-        <section class="relative flex lg:hidden items-center justify-center">
-          <img
-            src="/public/images/magazynier.webp"
-            class="z-50 w-full absolute -top-16 inset-0 mx-auto bg-cover"
-          />
-          <section
-            class="absolute top-4 inset-0 max-w-[512px] mx-auto flex flex-col w-full"
-          >
-            <article
-              class="bg-theme-yellow p-6 z-40 rotate-[-15deg] skew-x-[-15deg]"
-            ></article>
-            <article
-              class="bg-theme-purple-lighter p-6 z-40 rotate-[15deg] -mt-1 skew-x-[15deg]"
-            ></article>
-            <article
-              class="bg-theme-yellow p-6 z-40 rotate-[-15deg] -mt-1 skew-x-[-15deg]"
-            ></article>
-            <article
-              class="bg-theme-purple-lighter p-6 rotate-[15deg] z-50 -mt-1 skew-x-[15deg]"
-            ></article>
-          </section>
-        </section>
-      </section>
+    <section class="first-column">
+      <img id="logo" src="/public/images/logo_on_dark.webp" />
+      <h2 class="text-theme-yellow">
+        To coś więcej niż tylko narzędzie do obsługi zgłoszeń sygnalistów.
+      </h2>
       <p>
         Musisz lub chcesz wdrożyć rozwiązanie umożliwiające sygnalistom
         zgłaszanie nieprawidłowości dotyczących Twojej organizacji?
@@ -50,26 +20,13 @@
       </p>
       <button class="bg-theme-cyan">Sprawdź</button>
     </section>
-    <section class="relative hidden lg:flex items-center justify-center">
-      <img
-        src="/public/images/magazynier.webp"
-        class="z-50 w-2/3 absolute -top-48 inset-0 mx-auto bg-cover"
-      />
-      <section
-        class="absolute top-32 inset-0 max-w-[512px] mx-auto flex flex-col w-full"
-      >
-        <article
-          class="bg-theme-yellow p-16 z-40 rotate-[-15deg] skew-x-[-15deg]"
-        ></article>
-        <article
-          class="bg-theme-purple-lighter p-16 z-40 rotate-[15deg] mt-2 skew-x-[15deg]"
-        ></article>
-        <article
-          class="bg-theme-yellow p-16 z-40 rotate-[-15deg] mt-2 skew-x-[-15deg]"
-        ></article>
-        <article
-          class="bg-theme-purple-lighter p-16 rotate-[15deg] z-50 mt-2 skew-x-[15deg]"
-        ></article>
+    <section class="second-column">
+      <img id="photo" src="/public/images/magazynier.webp" />
+      <section class="bricks">
+        <article class="brick bg-theme-yellow"></article>
+        <article class="brick bg-theme-purple-lighter"></article>
+        <article class="brick bg-theme-yellow"></article>
+        <article class="brick bg-theme-purple-lighter"></article>
       </section>
     </section>
   </section>
