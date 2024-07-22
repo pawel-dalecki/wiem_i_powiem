@@ -1,31 +1,31 @@
 const templates = [
   {
-    url: "/^blog$",
+    url: "/",
+    template: "home",
+    title: "",
+    description: "",
+    templates: 7,
+  },
+  {
+    url: "/blog/g",
     template: "blog",
     title: "blog",
     description: "",
     templates: 2,
   },
   {
-    url: "/^blog/.*$",
+    url: "/blog/s*/g",
     template: "article",
     title: "blog",
     description: "",
     templates: 6,
   },
   {
-    url: "/^polityka-prywatnosci$/",
+    url: "/polityka-prywatnosci/g",
     template: "privacy",
     title: "Polityka prywatnosci",
     description: "",
     templates: 6,
-  },
-  {
-    url: "/",
-    template: "home",
-    title: "",
-    description: "",
-    templates: 7,
   },
   {
     url: "/",
@@ -47,13 +47,6 @@ async function injectTemplate(origin, template, target, prepend) {
       : await fetch(`/public/templates/${template}.html`);
     const text = await res.text();
     const doc = new DOMParser().parseFromString(text, 'text/html');
-    if (doc.querySelector("style")) {
-      const style = doc.querySelector("style");
-      const css_rules = style.sheet.cssRules;
-      for (const rule of css_rules) {
-        document.styleSheets[0].insertRule(rule.cssText)
-      }
-    }
     if (target) {
       document.querySelector(target).append(...doc.children[0].querySelector("body").children);
     } else {
