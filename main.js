@@ -1,31 +1,24 @@
 const templates = [
   {
-    url: "/blog",
+    url: "/^blog$",
     template: "blog",
     title: "blog",
     description: "",
     templates: 2,
   },
   {
-    url: "/blog/*",
+    url: "/^blog/.*$",
     template: "article",
     title: "blog",
     description: "",
     templates: 6,
   },
   {
-    url: "/polityka-prywatnosci/",
+    url: "/^polityka-prywatnosci$/",
     template: "privacy",
     title: "Polityka prywatnosci",
     description: "",
     templates: 6,
-  },
-  {
-    url: "",
-    template: "404",
-    title: "404 - Strony nie znaleziono",
-    description: "",
-    templates: 2,
   },
   {
     url: "/",
@@ -33,6 +26,13 @@ const templates = [
     title: "",
     description: "",
     templates: 7,
+  },
+  {
+    url: "/",
+    template: "404",
+    title: "404 - Strony nie znaleziono",
+    description: "",
+    templates: 2,
   },
 ]
 
