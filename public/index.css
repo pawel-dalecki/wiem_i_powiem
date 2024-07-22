@@ -961,10 +961,6 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1499,7 +1495,7 @@ textarea {
   padding: 4rem;
 }
 
-/* Home - Fourth section*/
+/* Home - Fourth section */
 
 #fourth-section {
   position: relative;
@@ -1588,5 +1584,66 @@ textarea {
   #fourth-section #bubbles {
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* Home - Fifth section */
+
+#fifth-section {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 0 179 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+#fith-section-container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  #fith-section-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  #fith-section-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #fith-section-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #fith-section-container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  #fith-section-container {
+    max-width: 1536px;
+  }
+}
+
+#fith-section-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  #fith-section-container {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 }
