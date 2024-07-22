@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind veriants;
+
+body {
+  font-family: Poppins;
+  font-size: 20px;
+}
+h1 {
+  font-family: Montserrat;
+  @apply text-4xl lg:text-5xl uppercase font-black my-6;
+}
+h2 {
+  font-family: Montserrat;
+  @apply text-3xl lg:text-4xl  font-black my-4;
+}
+h3 {
+  font-family: Montserrat;
+  @apply text-2xl lg:text-3xl font-bold my-2;
+}
+p {
+  @apply my-2;
+}
+a,
+button {
+  font-family: Montserrat;
+  @apply w-fit p-4 rounded-full px-8 text-xl uppercase cursor-pointer hover:shadow-[0.5em_0.5em_0_0_rgba(0,0,0,0.25)] transition-all font-black leading-4;
+}
+input,
+textarea {
+  @apply rounded-[4em] p-8 px-12;
+}
+textarea {
+  @apply text-white bg-transparent border-[0.25em] border-white;
+}
+.container {
+  @apply mx-auto px-4;
+}

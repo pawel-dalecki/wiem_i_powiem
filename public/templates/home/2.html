@@ -1,53 +1,45 @@
-<style>
-  /* Card styling */
-  .card.first-type {
-    text-align: center;
-  }
-  .card.first-type h3 {
-    color: #07d9c3;
-    font-size: 32px;
-  }
-</style>
-<section id="second-section">
-  <section class="container">
+<section>
+  <section class="container mx-auto py-12">
     <section>
-      <h1>Co oferujemy?</h1>
-      <p style="width: 512px">
+      <h1 class="text-3xl lg:text-5xl text-theme-yellow uppercase font-black">
+        Co oferujemy?
+      </h1>
+      <p class="max-w-[512px]">
         Wiem i Powiem to usługa, w ramach której dostarczamy wygodne i
         bezpieczne kanały zgłoszeniowe dla sygnalistów oraz przejmujemy od
         Ciebie obsługę takich zgłoszeń. Nie musisz martwić się o utrzymanie i
         obsługę kanałów zgłoszeń – bierzemy to na siebie!
       </p>
     </section>
-    <section class="grid four">
-      <article class="card first-type">
-        <img src="/public/images/zgloszenie.webp" />
-        <h3>ZGŁOSZENIE</h3>
+    <section class="flex flex-col gap-2 lg:grid lg:grid-cols-4 text-center">
+      <article class="flex flex-col gap-2">
+        <img src="/images/zgloszenie.webp" />
+        <h3 class="text-theme-cyan">ZGŁOSZENIE</h3>
         <p>
           W zależności od potrzeb udostępniamy Twojej organizacji aż trzy kanały
           zgłoszeń, które sami utrzymujemy i obsługujemy.
         </p>
       </article>
-      <article class="card first-type">
-        <img src="/public/images/wzory.webp" />
-        <h3>WZORY</h3>
+      <article class="flex flex-col gap-2">
+        <img src="/images/wzory.webp" />
+        <h3 class="text-theme-cyan">WZORY</h3>
         <p>
           W ramach pakietu powitalnego otrzymasz od nas wzory dokumentów, które
           należy wdrożyć, oraz instrukcję postępowania.
         </p>
       </article>
-      <article class="card first-type">
-        <img src="/public/images/weryfikacja.webp" />
-        <h3>WERYFIKACJA</h3>
+      <article class="flex flex-col gap-2">
+        <img src="/images/weryfikacja.webp" />
+        <h3 class="text-theme-cyan">WERYFIKACJA</h3>
         <p>
           Dokonujemy bezstronnej weryfikacji wstępnej każdego zgłoszenia. Z
           każdego zgłoszenia otrzymasz od nas raport i rekomendacje co do
           działań następczych, które należy podjąć w związku ze zgłoszeniem.
         </p>
       </article>
-      <article class="card first-type">
+      <article class="flex flex-col gap-2">
         <img src="/public/images/informacja.webp" />
-        <h3>INFORMACJA</h3>
+        <h3 class="text-theme-cyan">INFORMACJA</h3>
         <p>
           Wykonujemy wobec sygnalistów wszystkie obowiązki informacyjne, które
           prawo nakłada na Twoją organizację.

@@ -1,139 +1,113 @@
-<style>
-  /* Bubbles styling */
-  .bubbles {
-    display: flex;
-    gap: 5.5em;
-    align-items: center;
-    justify-content: center;
-  }
-  .bubble:hover {
-    margin: 0em;
-    padding: 2em;
-    box-shadow: 1em 1em 0 0 rgba(0, 0, 0, 0.25);
-  }
-  .bubble:hover h1 {
-    padding: 0.25em;
-    box-shadow: 0.25em 0.25em 0 0 rgba(0, 0, 0, 0.25);
-    animation: ping 1s infinite alternate-reverse;
-  }
-  .bubble {
-    margin: 1em;
-    background: #6200ed;
-    color: white;
-    border-radius: 100%;
-    padding: 1em;
-    text-align: center;
-    width: 14em;
-    height: 14em;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  .bubble h1 {
-    margin: 0;
-    background: #0dd4be;
-    color: white;
-    border-radius: 100%;
-    width: 1.33em;
-    height: 1.33em;
-    position: absolute;
-    top: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #fourth-section {
-    position: relative;
-    margin-bottom: 14em;
-  }
-  #fourth-section .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  #fourth-section .overlay img {
-    position: absolute;
-    right: 0;
-    top: -14em;
-  }
-  .droga {
-    position: absolute;
-    left: 0em;
-    right: 0;
-    top: 28em;
-    bottom: 0;
-    background-size: cover;
-    background-image: url("/public/images/droga.webp");
-    height: 720px;
-    z-index: -5;
-  }
-</style>
-<section id="fourth-section">
-  <section class="overlay">
-    <img src="/public/images/help.webp" />
+<section id="fourth-section" class="container relative px-4 py-12 mb-12">
+  <section class="absolute inset-0">
+    <img
+      class="hidden lg:flex absolute -top-48 right-24 max-w-[512px] z-10"
+      src="/public/images/help.webp"
+    />
   </section>
-  <section class="container">
-    <h1>
+  <section class="relative container mx-auto flex flex-col gap-4 z-40">
+    <h1 class="text-theme-yellow">
       Twoje <br />
       korzyści
     </h1>
-    <section class="bubbles">
-      <article class="bubble first">
-        <h1>1</h1>
-        <span>
-          nie musisz angażowac swoich zasobów i pracowników do
-          utrzymywaniakanałów zgłoszeń
-        </span>
-      </article>
-      <article class="bubble third">
-        <h1>3</h1>
-        <span>
-          każde zgłoszenie zostanie rzetelnie przebadane przez doświadczonych
-          prawników, z którymi współpracujemy
-        </span>
-      </article>
-      <article class="bubble forth">
-        <h1>5</h1>
-        <span
-          >możesz wykazać się należytą starannością w realizacji obowiązków
-          wynikających z przepisów prawa</span
+    <section class="grid grid-cols-2 lg:flex lg:flex-col gap-12 bg-cover pt-12">
+      <section
+        class="flex flex-col lg:grid lg:grid-cols-4 items-center justify-center"
+      >
+        <article
+          class="relative bg-theme-purple-lighter rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto group hover:shadow-[2em_2em_0_0_rgba(0,0,0,0.25)] transition-all"
         >
-      </article>
-      <article class="bubble seventh">
-        <h1>7</h1>
-        <span>
-          masz gwarancję bezstronnego i profesjonalnego rozpatrzenia każdego
-          zgłoszenia
-        </span>
-      </article>
-    </section>
-    <section class="bubbles">
-      <article class="bubble third">
-        <h1>2</h1>
-        <span>
-          każde zgłoszenie zostanie rzetelnie przebadane przez doświadczonych
-          prawników, z którymi współpracujemy
-        </span>
-      </article>
-      <article class="bubble forth">
-        <h1>5</h1>
-        <span
-          >możesz wykazać się należytą starannością w realizacji obowiązków
-          wynikających z przepisów prawa</span
+          <h1
+            class="bg-theme-cyan absolute -bottom-24 p-4 w-24 h-24 flex items-center justify-center text-white rounded-full group-hover:shadow-[1em_1em_0_0_rgba(0,0,0,0.25)] transition-all"
+          >
+            1
+          </h1>
+          <span>
+            nie musisz angażowac swoich zasobów i pracowników do
+            utrzymywaniakanałów zgłoszeń
+          </span>
+        </article>
+        <article
+          class="relative bg-theme-purple-lighter rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto group hover:shadow-[2em_2em_0_0_rgba(0,0,0,0.25)] transition-all"
         >
-      </article>
-      <article class="bubble seventh">
-        <h1>6</h1>
-        <span>
-          masz gwarancję bezstronnego i profesjonalnego rozpatrzenia każdego
-          zgłoszenia
-        </span>
-      </article>
+          <h1
+            class="bg-theme-cyan absolute -bottom-24 p-4 w-24 h-24 flex items-center justify-center text-white rounded-full group-hover:shadow-[1em_1em_0_0_rgba(0,0,0,0.25)] transition-all"
+          >
+            3
+          </h1>
+          <span>
+            każde zgłoszenie zostanie rzetelnie przebadane przez doświadczonych
+            prawników, z którymi współpracujemy
+          </span>
+        </article>
+        <article
+          class="relative bg-theme-purple-lighter rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto group hover:shadow-[2em_2em_0_0_rgba(0,0,0,0.25)] transition-all"
+        >
+          <h1
+            class="bg-theme-cyan absolute -bottom-24 p-4 w-24 h-24 flex items-center justify-center text-white rounded-full group-hover:shadow-[1em_1em_0_0_rgba(0,0,0,0.25)] transition-all"
+          >
+            5
+          </h1>
+          <span
+            >możesz wykazać się należytą starannością w realizacji obowiązków
+            wynikających z przepisów prawa</span
+          >
+        </article>
+        <article
+          class="relative bg-theme-purple-lighter rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto group hover:shadow-[2em_2em_0_0_rgba(0,0,0,0.25)] transition-all shadow-none"
+        >
+          <h1
+            class="bg-theme-cyan absolute -bottom-24 p-4 w-24 h-24 flex items-center justify-center text-white rounded-full group-hover:shadow-[1em_1em_0_0_rgba(0,0,0,0.25)] transition-all"
+          >
+            7
+          </h1>
+          <span>
+            masz gwarancję bezstronnego i profesjonalnego rozpatrzenia każdego
+            zgłoszenia
+          </span>
+        </article>
+      </section>
+      <section class="grid grid-cols-3 w-3/4 mx-auto">
+        <article
+          class="relative bg-theme-purple-lightest rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto group hover:shadow-[2em_2em_0_0_rgba(0,0,0,0.25)] transition-all shadow-none"
+        >
+          <h1
+            class="bg-theme-cyan absolute -bottom-24 p-4 w-24 h-24 flex items-center justify-center text-white rounded-full group-hover:shadow-[1em_1em_0_0_rgba(0,0,0,0.25)] transition-all"
+          >
+            2
+          </h1>
+          <span>
+            każde zgłoszenie zostanie rzetelnie przebadane przez doświadczonych
+            prawników, z którymi współpracujemy
+          </span>
+        </article>
+        <article
+          class="relative bg-theme-purple-lightest rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto group hover:shadow-[2em_2em_0_0_rgba(0,0,0,0.25)] transition-all shadow-none"
+        >
+          <h1
+            class="bg-theme-cyan absolute -bottom-24 p-4 w-24 h-24 flex items-center justify-center text-white rounded-full group-hover:shadow-[1em_1em_0_0_rgba(0,0,0,0.25)] transition-all"
+          >
+            5
+          </h1>
+          <span
+            >możesz wykazać się należytą starannością w realizacji obowiązków
+            wynikających z przepisów prawa</span
+          >
+        </article>
+        <article
+          class="relative bg-theme-purple-lightest rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto group hover:shadow-[2em_2em_0_0_rgba(0,0,0,0.25)] transition-all shadow-none"
+        >
+          <h1
+            class="bg-theme-cyan absolute -bottom-24 p-4 w-24 h-24 flex items-center justify-center text-white rounded-full group-hover:shadow-[1em_1em_0_0_rgba(0,0,0,0.25)] transition-all"
+          >
+            6
+          </h1>
+          <span>
+            masz gwarancję bezstronnego i profesjonalnego rozpatrzenia każdego
+            zgłoszenia
+          </span>
+        </article>
+      </section>
     </section>
-    <div class="droga" />
   </section>
 </section>

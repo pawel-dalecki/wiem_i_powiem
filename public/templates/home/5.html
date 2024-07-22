@@ -1,64 +1,55 @@
-<style>
-  /* Card styling */
-  .card.third-type {
-    display: flex;
-    background: #6200ed;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 2em 2em 0em 0em rgba(0, 0, 0, 0.25);
-    border-radius: 24em;
-  }
-  .card.third-type.recommended {
-    grid-column: span 2 / span 2;
-  }
-  .card.third-type.recommended h3 {
-  }
-  .card.third-type h3 {
-    margin: 0;
-    padding: 1em;
-    border-radius: 100%;
-    height: 128px;
-    width: 128px;
-    border: 0.5em solid white;
-    box-shadow: 0em 1em 0 0 rgba(0, 0, 0, 0.5);
-    color: #f9d044;
-    font-size: 32px;
-    text-transform: uppercase;
-  }
-  .card.third-type .content {
-    margin: 0;
-    background: white;
-    color: black;
-    padding: 1em;
-    border-radius: 0 0 2em 2em;
-  }
-</style>
-<section class="inverted">
-  <section class="container grid two">
-    <section class="">
+<section class="bg-theme-purple text-white px-4 py-12">
+  <section class="container mx-auto flex flex-col lg:grid lg:grid-cols-7">
+    <section class="col-span-4 flex flex-col gap-2">
       <h1>Oferta</h1>
-      <p>Umowa na korzystanie z Wiem i Powiem trwa 12 miesięcy</p>
+      <p>Umowa na korzystanie z Wiem i Powiem trwa </p><span class="bg-theme-purple-lightest rounded-full text-2xl p-4 font-black uppercase w-fit">12 miesięcy</span></p>
       <p>Abonament obejmuje:</p>
-      <ul>
+      <ul class="list-disc p-4">
         <li>wzory dokumentów</li>
         <li>utrzymanie kanałów zgłoszeń</li>
         <li>materiały informacyjne</li>
         <li>obsługę zgłoszeń</li>
       </ul>
+      <section class="hidden lg:flex">
       <p>
-        *Oferta dotyczy organizacji do 200 osób. Jeżeli Twoja organizacja
-        zatrudnia więcej osób przygotujemy dla Ciebie ofertę indywidualną
+        *oferta dotyczy organizacji do 200 osób. jeżeli twoja organizacja
+        zatrudnia więcej osób przygotujemy dla ciebie ofertę indywidualną
       </p>
-      <p>Zainteresowało Cię Wiem i Powiem? Skontaktuj się z nami!</p>
-      <button>Skorzystaj z oferty</button>
+      <p>zainteresowało cię wiem i powiem? skontaktuj się z nami!</p>
+      <button class="bg-theme-cyan">skorzystaj z oferty</button>
+      </section>
     </section>
-    <section class="grid three">
-      <article class="card third-type">
-        <h3><span>1</span> wariant</h3>
+    <section class="lg:col-span-3 grid grid-cols-3 gap-4 items-center justify-center">
+      <article
+        class="bg-theme-purple-lighter w-24 h-fit pb-24 text-center rounded-full shadow-[2em_2em_0_0_rgba(0,0,0,0.25)]"
+      >
+        <h3
+          class="bg-theme-purple-lighter rounded-full w-24 h-24 text-center justify-center items-center flex border-[0.5em] border-white shadow-[0_1em_0_0_rgba(0,0,0,0.25)]"
+        >
+          1 wariant
+        </h3>
+        <p class="mt-12">płatność co miesiąc</p>
       </article>
-      <article class="card third-type recommended">
-        <h3><span>2</span> wariant</h3>
+      <article
+        class="col-span-2 bg-theme-purple-lighter w-36 lg:w-64 h-fit pb-24 text-center rounded-full shadow-[2em_2em_0_0_rgba(0,0,0,0.25)]"
+      >
+        <h3
+          class="bg-theme-purple-lighter rounded-full w-36 h-36 text-center justify-center items-center flex border-[0.5em] border-white shadow-[0_1em_0_0_rgba(0,0,0,0.25)]"
+        >
+          2 wariant
+        </h3>
+
+        <p class="mt-12">płatność co miesiąc</p>
       </article>
     </section>
+      <section class="flex flex-col gap-2 lg:hidden">
+      <p>
+        *oferta dotyczy organizacji do 200 osób. jeżeli twoja organizacja
+        zatrudnia więcej osób przygotujemy dla ciebie ofertę indywidualną
+      </p>
+      <p>zainteresowało cię wiem i powiem? skontaktuj się z nami!</p>
+      <button class="bg-theme-cyan">skorzystaj z oferty</button>
+      </section>
+
   </section>
 </section>
