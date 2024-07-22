@@ -2,15 +2,16 @@
   <section id="fifth-section-container">
     <section class="col-span-4 flex flex-col gap-2">
       <h1>Oferta</h1>
-      <p>Umowa na korzystanie z Wiem i Powiem trwa </p><span class="bg-theme-purple-lightest rounded-full text-2xl p-4 font-black uppercase w-fit">12 miesięcy</span></p>
+      <p>Umowa na korzystanie z Wiem i Powiem trwa </p>
+      <span class="attention">12 miesięcy</span></p>
       <p>Abonament obejmuje:</p>
-      <ul class="list-disc p-4">
+      <ul>
         <li>wzory dokumentów</li>
         <li>utrzymanie kanałów zgłoszeń</li>
         <li>materiały informacyjne</li>
         <li>obsługę zgłoszeń</li>
       </ul>
-      <section class="hidden lg:flex">
+      <section id="disclaimer-desktop">
       <p>
         *oferta dotyczy organizacji do 200 osób. jeżeli twoja organizacja
         zatrudnia więcej osób przygotujemy dla ciebie ofertę indywidualną
@@ -19,30 +20,35 @@
       <button class="bg-theme-cyan">skorzystaj z oferty</button>
       </section>
     </section>
-    <section class="lg:col-span-3 grid grid-cols-3 gap-4 items-center justify-center">
+    <section class="cards">
       <article
-        class="bg-theme-purple-lighter w-24 h-fit pb-24 text-center rounded-full shadow-[2em_2em_0_0_rgba(0,0,0,0.25)]"
+        class="bg-theme-purple-lighter w-48 h-fit pb-24 text-center rounded-full shadow-[1em_1em_0_0_rgba(0,0,0,0.25)]"
       >
-        <h3
-          class="bg-theme-purple-lighter rounded-full w-24 h-24 text-center justify-center items-center flex border-[0.5em] border-white shadow-[0_1em_0_0_rgba(0,0,0,0.25)]"
+        <section
+          class="bg-theme-purple-lighter rounded-full m-0 w-24 h-24 lg:w-48 lg:h-48 text-center justify-center items-center flex border-[0.5em] border-white shadow-[0_1em_0_0_rgba(0,0,0,0.25)] flex-col gap-2 uppercase"
         >
-          1 wariant
-        </h3>
+        <h1
+        >
+          1 
+        </h1>
+        <h3>Wariant</h3>
+        </section>
         <p class="mt-12">płatność co miesiąc</p>
       </article>
       <article
-        class="col-span-2 bg-theme-purple-lighter w-36 lg:w-64 h-fit pb-24 text-center rounded-full shadow-[2em_2em_0_0_rgba(0,0,0,0.25)]"
+        class="col-span-2 bg-theme-purple-lighter w-48 lg:w-72 h-fit p-0 pb-24 text-center rounded-full shadow-[1em_1em_0_0_rgba(0,0,0,0.25)]"
       >
-        <h3
-          class="bg-theme-purple-lighter rounded-full w-36 h-36 text-center justify-center items-center flex border-[0.5em] border-white shadow-[0_1em_0_0_rgba(0,0,0,0.25)]"
+        <section
+          class="bg-theme-yellow rounded-full m-0 w-48 h-48 lg:w-72 lg:h-72 text-center justify-center items-center flex border-[0.5em] border-white shadow-[0_1em_0_0_rgba(0,0,0,0.25)] flex-col gap-2 uppercase"
         >
-          2 wariant
-        </h3>
-
+          <h1
+          >2</h1>
+          <h3>Wariant</h3>
+        </section>
         <p class="mt-12">płatność co miesiąc</p>
       </article>
     </section>
-      <section class="flex flex-col gap-2 lg:hidden">
+      <section class="disclaimer-mobile">
       <p>
         *oferta dotyczy organizacji do 200 osób. jeżeli twoja organizacja
         zatrudnia więcej osób przygotujemy dla ciebie ofertę indywidualną

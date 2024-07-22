@@ -71,7 +71,7 @@ textarea {
   @apply rounded-full bg-theme-cyan p-12 absolute right-0 top-0;
 }
 #first-section .circle-half {
-  @apply rounded-tl-full rounded-tr-full bg-theme-purple-lightest absolute h-12 w-24 rotate-90 -bottom-40 left-1/2;
+  @apply rounded-tl-full rounded-tr-full bg-theme-purple-lightest absolute h-12 w-24 rotate-90 -bottom-32 left-1/2;
 }
 #first-section .bricks {
   @apply absolute top-36 inset-0 max-w-[512px] mx-auto flex flex-col w-full;
@@ -86,7 +86,7 @@ textarea {
   @apply z-[999];
 }
 #first-section #photo {
-  @apply z-50 w-2/3 absolute -top-32 inset-0 mx-auto bg-cover;
+  @apply z-50 w-2/3 absolute -top-28 inset-0 mx-auto bg-cover;
 }
 
 /* Home - Second section */
@@ -111,7 +111,7 @@ textarea {
   @apply container flex flex-col gap-8 py-12;
 }
 #third-section .cards {
-  @apply flex flex-col gap-4 lg:grid lg:grid-cols-3 text-center;
+  @apply flex flex-col gap-2 lg:grid lg:grid-cols-3 text-center;
 }
 #third-section .cards .card .content {
   @apply bg-white text-black rounded-b-xl p-4;
@@ -137,13 +137,41 @@ textarea {
   @apply hidden lg:flex absolute -top-48 right-24 max-w-[512px] z-10;
 }
 #fourth-section #bubbles {
-  @apply grid grid-cols-2 lg:flex w-[1275px] translate-x-4 mx-auto lg:flex-col gap-8 bg-cover pt-12 z-40;
+  @apply grid grid-cols-2 lg:flex w-[1275px] translate-x-4 mx-auto lg:flex-col gap-2 bg-cover pt-12 z-40;
 }
 
 /* Home - Fifth section */
 #fifth-section {
   @apply bg-theme-purple text-white;
 }
-#fith-section-container {
+#fifth-section #fifth-section-container {
   @apply container mx-auto px-4 py-12 flex flex-col lg:grid lg:grid-cols-7;
+}
+#fifth-section .attention {
+  @apply bg-theme-purple-lightest rounded-full text-2xl p-4 font-black uppercase w-fit;
+}
+#fifth-section .disclaimer-desktop {
+  @apply hidden lg:flex;
+}
+
+#fifth-section .disclaimer-mobile {
+  @apply flex flex-col gap-2 lg:hidden;
+}
+
+#fifth-section .cards {
+  @apply lg:col-span-3 grid grid-cols-3 gap-4 items-center justify-center;
+}
+
+/* Home - Seventh section*/
+#seventh-section {
+  @apply bg-theme-purple text-white;
+}
+#seventh-section-container {
+  @apply container mx-auto px-4 py-12 flex flex-col lg:grid lg:grid-cols-2 gap-2;
+}
+#seventh-section #contact-form {
+  @apply flex flex-col gap-4;
+}
+#seventh-section #contact-form form {
+  @apply flex flex-col gap-4;
 }
