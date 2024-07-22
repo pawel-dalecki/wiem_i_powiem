@@ -701,6 +701,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .flex {
   display: flex;
 }
@@ -975,6 +979,16 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -989,6 +1003,14 @@ video {
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-center {
