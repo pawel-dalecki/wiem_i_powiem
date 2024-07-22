@@ -1,0 +1,121 @@
+<section>
+  <section class="container px-4 py-12">
+    <h1 class="text-theme-yellow">Polityka prywatności</h1>
+    <h3 class="text-theme-cyan">Administrator danych osobowych</h3>
+    <p>
+      Administratorem danych osobowych jest spółka: Wiem i Powiem sp. z o. o. z
+      siedzibą w Poznaniu przy ul. Żydowskiej 33/2. NIP: XXX, KRS: XXX.
+    </p>
+    <h3 class="text-theme-cyan">Kontakt z Administratorem</h3>
+    <p>
+      Możesz się z nami skontaktować listownie na adres podany powyżej lub
+      mailowo: XXX..
+    </p>
+    <h3 class="text-theme-cyan">Cele przetwarzania danych osobowych</h3>
+    <p>
+      Przetwarzamy dane osobowe w następujących celach i w oparciu o następujące
+      podstawy prawne:
+    </p>
+    <section class="grid grid-cols-2 gap-4">
+      <section class="flex flex-col">
+        <p>
+          1. w celu obsługi korespondencji za pośrednictwem poczty
+          elektronicznej, telefonicznej, w tym wywołanej poprzez formularz
+          kontaktowy zamieszczony na stronie – podstawą prawną jest przepis art.
+          6 ust. 1 lit. f) RODO, czyli nasz prawnie uzasadniony interes
+          polegający na prowadzeniu i archiwizowaniu korespondencji z Tobą,
+        </p>
+        <p>
+          2. w celu obsługi zamówień Wiem i Powiem i realizacji umowy na
+          korzystanie z Wiem i Powiem – podstawą prawną jest przepis art. 6 ust.
+          1 lit. a) RODO,
+        </p>
+        <p>
+          3. w celu obsługi komentarzy zamieszczonych na naszym blogu – podstawą
+          prawną jest przepis art. 6 ust. 1 lit. f) RODO, czyli nasz prawnie
+          uzasadniony interes polegający na obsłudze bloga i komentarzy
+          zamieszczonych pod wpisami,
+        </p>
+        <p>
+          4. w celach realizacji obowiązków podatkowych i księgowych – podstawą
+          prawną jest przepis art. 6 ust. 1 lit. c) RODO w związku z właściwymi
+          przepisami prawa podatkowego lub rachunkowego
+        </p>
+      </section>
+      <section class="flex flex-col">
+        <p>
+          5. w celu ewentualnej obrony, dochodzenia lub ustalenia roszczeń –
+          podstawą prawną jest przepis art. 6 ust. 1 lit. f) RODO, czyli nasz
+          prawnie uzasadniony interes polegający na obronie, dochodzeniu lub
+          ustalaniu roszczeń – w razie takiej konieczności,
+        </p>
+        <p>
+          6. w celu analizy i statystyki – podstawa prawną jest przepis art. 6
+          ust. 1 lit. f) RODO, czyli nasz prawnie uzasadniony interes prawny
+          polegający na tworzeniu, prowadzeniu i analizowaniu statystyk
+          związanych z aktywnością użytkowników na naszych stronach
+          internetowych,
+        </p>
+        <p>
+          7. w celu marketingu własnego – podstawą prawną jest przepis art. 6
+          ust. 1 lit. f) RODO, czyli nasz prawnie uzasadniony interes polegający
+          na prowadzeniu marketingu bezpośredniego naszych usług i produktów.
+        </p>
+      </section>
+    </section>
+    <h3 class="text-theme-cyan">Okres przechowywania danych osobowych</h3>
+    <p>
+      Dane osobowe przechowywane będą przez okres niezbędny do celów, dla
+      których są przetwarzane, a w szczególności:
+    </p>
+    <section class="grid grid-cols-2 gap-4">
+      <section class="flex flex-col">
+        <p>
+          1. Dane osobowe przetwarzane w celu obsługi korespondencji – dane będą
+          przechowywane przez okres niezbędny do prowadzenia korespondencji w
+          sprawie, której korespondencja dotyczy. W przypadku zakończenia
+          korespondencji, zakończenia współpracy, korespondencja będzie
+          archiwizowana, o ile nie będzie konieczności jej przetwarzania z uwagi
+          na inne cele (np. konieczność obrony, dochodzenia, ustalenia roszczeń
+          albo realizacja obowiązków podatkowych i księgowych);
+        </p>
+        <p>
+          2. Dane osobowe przetwarzane w celu obsługi zamówień Wiem i Powiem –
+          dane będą przechowywane przez okres niezbędny do realizacji
+          zamówienia, realizacji umowy, a po jej zakończeniu do czasu
+          przedawnienia roszczeń wynikających z zawartej umowy.
+        </p>
+        <p>
+          3. Dane osobowe przetwarzane w celu obsługi komentarzy zamieszczonych
+          na naszym blogu – dane będą przetwarzane przez okres, w którym na
+          blogu będą zamieszczone wpisy, których dotyczy komentarz.
+        </p>
+
+        <p>
+          4. Dane osobowe przetwarzane w celu realizacji obowiązków podatkowych
+          i księgowych – dane będą przetwarzane przez okres wynikający z
+          obowiązujących przepisów.
+        </p>
+      </section>
+      <section class="flex flex-col">
+        <p>
+          5. Dane osobowe przetwarzane w celu ewentualnej obrony, dochodzenia
+          lub ustalenia roszczeń – dane będą przetwarzane do czasu przedawnienia
+          ewentualnych roszczeń.
+        </p>
+        <p>
+          6. Dane osobowe przetwarzane w celu analizy i statystyki – dane będą
+          przetwarzane do czasu zdezaktualizowania się lub utraty ich
+          przydatności.
+        </p>
+        <p>
+          7. Dane osobowe przetwarzane w celu marketingu własnego – dane będą
+          przetwarzane do czasu zdezaktualizowania się lub utraty ich
+          przydatności.
+        </p>
+      </section>
+    </section>
+    <h3 class="text-theme-cyan">Odbiorcy danych osobowych</h3>
+    <p>Przekazujemy Twoje dane osobowe następującym podmiotom:</p>
+  </section>
+</section>
