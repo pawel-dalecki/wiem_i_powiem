@@ -26,11 +26,17 @@ p {
 a,
 button {
   font-family: Montserrat;
-  @apply w-fit p-4 rounded-full px-8 text-xl uppercase cursor-pointer hover:shadow-[0.5em_0.5em_0_0_rgba(0,0,0,0.25)] transition-all font-black leading-4;
+  @apply w-fit p-4 rounded-full px-8 text-xl uppercase cursor-pointer transition-all font-black leading-4 hover:bg-theme-yellow;
 }
 input,
 textarea {
   @apply text-black rounded-[4em] p-8 px-12;
+}
+input::placeholder {
+  @apply text-black;
+}
+textarea::placeholder {
+  @apply text-white;
 }
 textarea {
   @apply text-white bg-transparent border-[0.25em] border-white;
@@ -41,13 +47,13 @@ textarea {
 
 /* Header */
 #header {
-  @apply z-[999];
+  @apply relative z-[999];
 }
 #header-container {
   @apply container p-4 mx-auto flex gap-2 justify-between items-center z-[999] bg-transparent;
 }
 #header-container a.link {
-  @apply rounded-full bg-theme-purple-lightest p-2 text-white;
+  @apply rounded-full bg-theme-purple-lightest p-2 px-8 text-white hover:bg-theme-purple hover:text-theme-cyan z-[999];
 }
 /* Footer * /
 
@@ -137,7 +143,7 @@ textarea {
   @apply hidden lg:flex absolute -top-48 right-24 max-w-[512px] z-10;
 }
 #fourth-section #bubbles {
-  @apply grid grid-cols-2 lg:flex w-[1275px] translate-x-4 mx-auto lg:flex-col gap-2 bg-cover pt-12 z-40;
+  @apply grid grid-cols-2 lg:flex w-[1275px] translate-x-4 mx-auto lg:flex-col gap-12 bg-cover pt-12 z-40;
 }
 
 /* Home - Fifth section */

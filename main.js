@@ -78,12 +78,10 @@ const image = document.querySelector("#photo");
 
 function changePhoto() {
   if (image.src.includes("magazynier")) {
-    image.src = "/public/images/lekarz.webp"
-  } else if (image.src.includes("lekarz")) {
-    image.src = "public/images/kucharz.webp"
-  } else if (image.src.includes("kucharz")) {
-    image.src = "public/images/nauczyciel.webp"
+    image.src = "/public/images/nauczyciel.webp"
   } else if (image.src.includes("nauczyciel")) {
+    image.src = "public/images/lekarz.webp"
+  } else if (image.src.includes("lekarz")) {
     image.src = "public/images/pracownik-biurowy.webp"
   } else if (image.src.includes("pracownik-biurowy")) {
     image.src = "public/images/magazynier.webp"
