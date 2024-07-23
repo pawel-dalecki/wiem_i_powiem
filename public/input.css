@@ -9,8 +9,8 @@ body {
   font-size: 20px;
 }
 h1 {
-  font-family: Montserrat;
-  @apply text-4xl lg:text-5xl uppercase font-black my-6;
+  font-family: Poppins;
+  @apply text-[72px] lg:text-[96px] uppercase font-black my-6 leading-[1em];
 }
 h2 {
   font-family: Montserrat;
@@ -30,7 +30,7 @@ button {
 }
 input,
 textarea {
-  @apply rounded-[4em] p-8 px-12;
+  @apply text-black rounded-[4em] p-8 px-12;
 }
 textarea {
   @apply text-white bg-transparent border-[0.25em] border-white;
@@ -74,13 +74,13 @@ textarea {
   @apply rounded-tl-full rounded-tr-full bg-theme-purple-lightest absolute h-12 w-24 rotate-90 -bottom-32 left-1/2;
 }
 #first-section .bricks {
-  @apply absolute top-36 inset-0 max-w-[512px] mx-auto flex flex-col w-full;
+  @apply absolute top-28 inset-0 max-w-[512px] mx-auto flex flex-col w-full;
 }
 #first-section .bricks .brick {
-  @apply p-16 rotate-[-15deg] mt-1 skew-x-[-15deg] z-10;
+  @apply -mb-6 p-20 z-10 skew-x-[-15deg] rotate-[-15deg];
 }
 #first-section .bricks .brick.bg-theme-purple-lighter {
-  @apply p-16 rotate-[15deg] skew-x-[15deg] z-10;
+  @apply rotate-[15deg] skew-x-[15deg];
 }
 #first-section .bricks .brick:last-child {
   @apply z-[999];
@@ -97,10 +97,10 @@ textarea {
   @apply container mx-auto py-12;
 }
 #second-section .cards {
-  @apply flex flex-col gap-2 lg:grid lg:grid-cols-4 text-center;
+  @apply flex flex-col gap-6 lg:grid lg:grid-cols-4 text-center;
 }
 #second-section .cards .card {
-  @apply flex flex-col gap-2;
+  @apply flex flex-col gap-4;
 }
 
 /* Home - Third section */
@@ -111,7 +111,7 @@ textarea {
   @apply container flex flex-col gap-8 py-12;
 }
 #third-section .cards {
-  @apply flex flex-col gap-2 lg:grid lg:grid-cols-3 text-center;
+  @apply flex flex-col gap-6 lg:grid lg:grid-cols-3 text-center;
 }
 #third-section .cards .card .content {
   @apply bg-white text-black rounded-b-xl p-4;
@@ -120,7 +120,7 @@ textarea {
   @apply list-disc p-4 marker:text-theme-purple-lightest flex flex-col gap-4;
 }
 #third-section .cards .card h3 {
-  @apply rounded-t-xl bg-theme-purple-lighter text-theme-yellow uppercase font-bold p-4 m-0;
+  @apply rounded-t-xl bg-theme-purple-lighter text-theme-yellow uppercase font-bold p-10 m-0;
 }
 
 /* Home - Fourth section */
