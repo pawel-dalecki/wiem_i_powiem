@@ -26,7 +26,7 @@ p {
 a,
 button {
   font-family: Montserrat;
-  @apply w-fit p-4 rounded-full px-8 text-xl uppercase cursor-pointer transition-all font-black leading-4 hover:bg-theme-yellow;
+  @apply w-fit p-4 rounded-full px-8 text-xl uppercase cursor-pointer font-black leading-4 hover:bg-theme-yellow focus:bg-theme-yellow focus:border-none focus:outline-none;
 }
 input,
 textarea {
@@ -53,8 +53,11 @@ textarea {
 #header-container {
   @apply container p-4 mx-auto flex gap-2 justify-between items-center z-[999] bg-transparent;
 }
+#header-container #logo {
+  @apply hover:bg-transparent focus:bg-transparent rounded-none;
+}
 #header-container a.link {
-  @apply rounded-full bg-theme-purple-lightest p-2 px-8 text-white hover:bg-theme-purple hover:text-theme-cyan z-[999];
+  @apply rounded-full bg-theme-purple-lightest p-2 px-8 text-white focus:bg-theme-purple focus:text-theme-cyan hover:bg-theme-purple hover:text-theme-cyan z-[999];
 }
 /* Footer * /
 
