@@ -90,3 +90,14 @@ function changePhoto() {
 
 const interval = setInterval(changePhoto, 3000)
 
+const faqButtons = document.querySelectorAll("#sixth-section #faq-picker button");
+for (const b of faqButtons) {
+  b.addEventListener("mouseenter", () => {
+    b.setAttribute("original-src", b.querySelector("img").src);
+    b.querySelector("img").src = "/public/images/triangle-shape-cyan.svg";
+  })
+  b.addEventListener("mouseleave", () => {
+    b.querySelector("img").src = b.getAttribute("original-src")
+    b.toggleAttribute("original-src");
+  })
+}
