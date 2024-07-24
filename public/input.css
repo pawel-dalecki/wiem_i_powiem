@@ -30,8 +30,9 @@ button {
 }
 input,
 textarea {
-  @apply text-black rounded-[4em] p-8 px-12;
+  @apply text-black rounded-[4em] p-8 px-12 focus:outline-none border-4 border-transparent focus:border-theme-yellow;
 }
+
 input::placeholder {
   @apply text-black;
 }
