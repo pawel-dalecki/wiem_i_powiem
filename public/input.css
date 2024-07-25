@@ -174,7 +174,7 @@ textarea {
 
 /* Home - Seventh section*/
 #seventh-section {
-  @apply bg-theme-purple text-white;
+  @apply relative z-[999] bg-theme-purple text-white;
 }
 #seventh-section-container {
   @apply container mx-auto px-4 py-12 flex flex-col lg:grid lg:grid-cols-2 gap-2;

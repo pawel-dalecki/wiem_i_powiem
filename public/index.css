@@ -604,10 +604,6 @@ video {
   bottom: -6rem;
 }
 
-.-left-12 {
-  left: -3rem;
-}
-
 .-left-32 {
   left: -8rem;
 }
@@ -624,8 +620,8 @@ video {
   top: -6rem;
 }
 
-.-top-44 {
-  top: -11rem;
+.-top-40 {
+  top: -10rem;
 }
 
 .-top-8 {
@@ -636,64 +632,16 @@ video {
   left: 0px;
 }
 
-.left-2 {
-  left: 0.5rem;
+.left-12 {
+  left: 3rem;
 }
 
 .left-24 {
   left: 6rem;
 }
 
-.left-28 {
-  left: 7rem;
-}
-
 .right-0 {
   right: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.right-24 {
-  right: 6rem;
-}
-
-.top-32 {
-  top: 8rem;
-}
-
-.top-36 {
-  top: 9rem;
-}
-
-.top-44 {
-  top: 11rem;
-}
-
-.top-48 {
-  top: 12rem;
-}
-
-.top-56 {
-  top: 14rem;
-}
-
-.top-\[28em\] {
-  top: 28em;
-}
-
-.top-\[8em\] {
-  top: 8em;
-}
-
-.-right-4 {
-  right: -1rem;
-}
-
-.right-8 {
-  right: 2rem;
 }
 
 .right-14 {
@@ -704,72 +652,52 @@ video {
   right: 5rem;
 }
 
-.right-12 {
-  right: 3rem;
-}
-
-.-top-40 {
-  top: -10rem;
-}
-
-.-top-36 {
-  top: -9rem;
-}
-
-.-top-12 {
-  top: -3rem;
-}
-
-.left-8 {
-  left: 2rem;
-}
-
-.left-12 {
-  left: 3rem;
-}
-
-.-left-24 {
-  left: -6rem;
-}
-
-.top-40 {
-  top: 10rem;
-}
-
-.-top-4 {
-  top: -1rem;
-}
-
-.top-\[5em\] {
-  top: 5em;
-}
-
-.top-\[12em\] {
-  top: 12em;
-}
-
-.top-\[14em\] {
-  top: 14em;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
-.left-20 {
-  left: 5rem;
+.right-24 {
+  right: 6rem;
 }
 
 .top-20 {
   top: 5rem;
 }
 
-.left-16 {
-  left: 4rem;
-}
-
 .top-28 {
   top: 7rem;
+}
+
+.top-44 {
+  top: 11rem;
+}
+
+.top-48 {
+  top: 12rem;
+}
+
+.top-\[14em\] {
+  top: 14em;
+}
+
+.top-\[28em\] {
+  top: 28em;
+}
+
+.top-\[8em\] {
+  top: 8em;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.top-24 {
+  top: 6rem;
 }
 
 .z-10 {
@@ -878,6 +806,10 @@ video {
   width: 12rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .w-72 {
   width: 18rem;
 }
@@ -893,10 +825,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .max-w-48 {
@@ -1074,10 +1002,6 @@ video {
 
 .pb-48 {
   padding-bottom: 12rem;
-}
-
-.pt-48 {
-  padding-top: 12rem;
 }
 
 .text-center {
@@ -2009,6 +1933,8 @@ textarea {
 /* Home - Seventh section*/
 
 #seventh-section {
+  position: relative;
+  z-index: 999;
   --tw-bg-opacity: 1;
   background-color: rgb(55 0 179 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
