@@ -10,23 +10,26 @@ body {
 }
 h1 {
   font-family: Poppins;
-  @apply text-[72px] lg:text-[96px] uppercase font-black my-6 leading-[1em];
+  @apply text-[72px] lg:text-[96px] uppercase font-black my-12;
 }
+
 h2 {
   font-family: Montserrat;
-  @apply text-3xl lg:text-4xl  font-black my-4;
+  @apply text-3xl lg:text-4xl font-bold my-4 lg:leading-12;
 }
+
 h3 {
-  font-family: Montserrat;
+  font-family: Poppins;
   @apply text-2xl lg:text-3xl font-bold my-2;
 }
 p {
-  @apply my-4;
+  @apply my-4 lg:leading-10;
 }
+
 a,
 button {
   font-family: Montserrat;
-  @apply w-fit p-4 rounded-full px-8 text-xl uppercase cursor-pointer font-black leading-4 hover:bg-theme-yellow focus:bg-theme-yellow focus:border-none focus:outline-none;
+  @apply text-2xl w-fit p-4 rounded-full px-8  uppercase cursor-pointer font-black leading-4 hover:bg-theme-yellow focus:bg-theme-yellow focus:border-none focus:outline-none;
 }
 input,
 textarea {
@@ -163,15 +166,24 @@ textarea {
 #fifth-section .disclaimer-desktop {
   @apply hidden lg:flex;
 }
-
 #fifth-section .disclaimer-mobile {
   @apply flex flex-col gap-2 lg:hidden;
 }
-
 #fifth-section .cards {
   @apply lg:col-span-3 grid grid-cols-3 gap-4 items-center justify-center;
 }
-
+#fifth-section .first-card {
+  @apply bg-theme-purple-lighter w-48 h-fit pb-24 text-center rounded-full shadow-[1em_1em_0_0_rgba(0,0,0,0.25)];
+}
+#fifth-section .first-card .heading {
+  @apply bg-theme-purple-lighter rounded-full m-0 w-24 h-24 lg:w-48 lg:h-48 text-center justify-center items-center flex border-[1em] border-white shadow-[0_1em_0_0_rgba(0,0,0,0.25)] flex-col uppercase;
+}
+#fifth-section .first-card .heading h1 {
+  @apply m-0 text-5xl;
+}
+#fifth-section .first-card .heading h2 {
+  @apply m-0 text-xl font-black;
+}
 /* Home - Seventh section*/
 #seventh-section {
   @apply relative z-[999] bg-theme-purple text-white;
@@ -185,3 +197,46 @@ textarea {
 #seventh-section #contact-form form {
   @apply flex flex-col gap-4;
 }
+
+/* Privacy */
+
+/* Blog - Page */
+/*Home - First section */
+#blog-page {
+  @apply bg-theme-purple text-white py-12 lg:pb-24;
+}
+#blog-page-container {
+  @apply relative container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-2;
+}
+#blog-page .first-column {
+  @apply relative z-50 flex flex-col gap-2 pr-32;
+}
+#blog-page .second-column {
+  @apply relative hidden lg:flex items-center justify-center;
+}
+#blog-page #logo {
+  @apply w-full lg:w-1/2;
+}
+#blog-page .circle-full {
+  @apply rounded-full bg-theme-cyan p-12 absolute right-0 top-0;
+}
+#blog-page .circle-half {
+  @apply rounded-tl-full rounded-tr-full bg-theme-purple-lightest absolute h-12 w-24 rotate-90 -bottom-32 left-1/2;
+}
+#blog-page .bricks {
+  @apply absolute top-28 inset-0 max-w-[512px] mx-auto flex flex-col w-full;
+}
+#blog-page .bricks .brick {
+  @apply -mb-6 p-20 z-10 skew-x-[-15deg] rotate-[-15deg];
+}
+#blog-page .bricks .brick.bg-theme-purple-lighter {
+  @apply rotate-[15deg] skew-x-[15deg];
+}
+#blog-page .bricks .brick:last-child {
+  @apply z-[999];
+}
+#blog-page #photo {
+  @apply z-50 w-2/3 absolute -top-28 inset-0 mx-auto bg-cover;
+}
+
+/* Blog - Article */

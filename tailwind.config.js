@@ -10,7 +10,9 @@ module.exports = {
         "theme-yellow": "#f9d044",
         "theme-cyan": "#0dd7c1"
       },
-
+      lineHeight: {
+        "12": "3rem"
+      }
     },
   },
   plugins: [],

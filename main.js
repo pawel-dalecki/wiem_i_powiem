@@ -34,12 +34,11 @@ const templates = [
     description: "",
     templates: 2,
   },
-]
+];
 
 // Render.
 const pathname = window.location.pathname;
 const currentTemplate = templates.find((element) => element.url.match(pathname)) || templates[4];
-console.log(currentTemplate)
 async function injectTemplate(origin, template, target, prepend) {
   try {
     const res = origin ?
@@ -68,6 +67,7 @@ async function injectTemplate(origin, template, target, prepend) {
     console.error('Failed to fetch page:', err);
   }
 }
+
 await injectTemplate(undefined, 'header', undefined, true);
 for (let template = 1; template <= currentTemplate.templates; template++) {
   await injectTemplate(currentTemplate.template, template, "main", false)
@@ -75,7 +75,6 @@ for (let template = 1; template <= currentTemplate.templates; template++) {
 await injectTemplate(undefined, 'footer', undefined, false);
 
 const image = document.querySelector("#photo");
-
 function changePhoto() {
   if (image.src.includes("magazynier")) {
     image.src = "/public/images/nauczyciel.webp"
@@ -89,7 +88,6 @@ function changePhoto() {
 }
 
 const interval = setInterval(changePhoto, 3000)
-
 const faqButtons = document.querySelectorAll("#sixth-section #faq-picker button");
 for (const b of faqButtons) {
   b.addEventListener("mouseenter", () => {
