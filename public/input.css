@@ -53,7 +53,7 @@ textarea {
   @apply container p-4 mx-auto flex gap-2 justify-between items-center z-[999] bg-transparent;
 }
 #header-container #logo {
-  @apply hover:bg-transparent focus:bg-transparent rounded-none;
+  @apply hover:bg-transparent focus:bg-transparent rounded-none w-1/2;
 }
 #header-container a.link {
   @apply rounded-full bg-theme-purple-lightest p-2 px-8 text-white focus:bg-theme-purple focus:text-theme-cyan hover:bg-theme-purple hover:text-theme-cyan z-[999];
@@ -74,7 +74,7 @@ textarea {
   @apply relative hidden lg:flex items-center justify-center;
 }
 #first-section #logo {
-  @apply w-full lg:w-1/2;
+  @apply w-1/2;
 }
 #first-section .circle-full {
   @apply rounded-full bg-theme-cyan p-12 absolute right-0 top-0;
@@ -110,6 +110,9 @@ textarea {
 }
 #second-section .cards .card {
   @apply flex flex-col gap-4;
+}
+#second-section .cards .card img {
+  @apply scale-150;
 }
 
 /* Home - Third section */
@@ -202,15 +205,6 @@ textarea {
 #fifth-section .first-card .heading h2 {
   @apply m-0 text-xl font-black;
 }
-#fifth-section .second-card {
-  @apply;
-}
-#fifth-section .second-card .heading {
-  @apply;
-}
-#fifth-section .second-card .heading h2 {
-  @apply;
-}
 /* Home - Seventh section*/
 #seventh-section {
   @apply relative z-[999] bg-theme-purple text-white;
@@ -242,7 +236,7 @@ textarea {
   @apply relative hidden lg:flex items-center justify-center;
 }
 #blog-page #logo {
-  @apply w-full lg:w-1/2;
+  @apply w-1/2;
 }
 #blog-page .circle-full {
   @apply rounded-full bg-theme-cyan p-12 absolute right-0 top-0;
