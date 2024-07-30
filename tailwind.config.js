@@ -10,6 +10,11 @@ module.exports = {
         "theme-yellow": "#f9d044",
         "theme-cyan": "#0dd7c1"
       },
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '3rem',
+        '6xl': '4rem'
+      },
       lineHeight: {
         "12": "3rem"
       }
