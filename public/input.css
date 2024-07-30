@@ -11,14 +11,13 @@ h1 {
   font-family: Poppins;
   @apply text-[32px] md:text-[64px] lg:text-[96px] uppercase font-black mt-4 lg:my-12;
 }
-
 h2 {
   font-family: Montserrat;
-  @apply text-xl lg:text-4xl font-bold mt-2 lg:my-4 lg:leading-12;
+  @apply text-[28px] md:text-[56px] lg:text-[72px] font-bold mt-2 lg:my-4 lg:leading-12;
 }
 h3 {
   font-family: Poppins;
-  @apply text-lg lg:text-3xl font-bold my-2 lg:my-4;
+  @apply text-[24px] md:text-[48px] lg:text-[64px] text-lg lg:text-3xl font-bold my-2 lg:my-4;
 }
 p {
   @apply text-[12px] md:text-[16px] lg:text-[20px] my-2 lg:my-4 lg:leading-10;
@@ -202,6 +201,15 @@ textarea {
 }
 #fifth-section .first-card .heading h2 {
   @apply m-0 text-xl font-black;
+}
+#fifth-section .second-card {
+  @apply;
+}
+#fifth-section .second-card .heading {
+  @apply;
+}
+#fifth-section .second-card .heading h2 {
+  @apply;
 }
 /* Home - Seventh section*/
 #seventh-section {
