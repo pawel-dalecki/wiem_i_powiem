@@ -1,7 +1,7 @@
 <section id="sixth-section">
   <section
     id="sixth-section-container"
-    class="container flex flex-col gap-2 lg:grid lg:grid-cols-3 py-12 items-center justify-center"
+    class="container flex flex-col gap-2 lg:grid lg:grid-cols-3 py-12 lg:items-center lg:justify-center"
   >
     <section class="flex flex-col pb-32 gap-4">
       <h1 class="text-theme-yellow">Faq</h1>
@@ -12,25 +12,25 @@
     </section>
     <section
       id="faq-picker"
-      class="relative col-span-2 text-white text-center text-xs h-full p-0"
+      class="relative col-span-2 text-white text-center text-xs h-full min-h-[512px] p-0"
     >
       <section class="top-24 left-24 right-24 absolute z-20">
         <article
-          class="absolute top-[14em] left-0 -rotate-[17.5deg] w-64 p-0 hover:bg-transparent z-20"
+          class="absolute -left-[8em] top-[8em] lg:top-[14em] lg:left-0 -rotate-[17.5deg] w-32 md:w-48 lg:w-64 p-0 hover:bg-transparent z-20"
         >
-          <button class="p-0 hover:bg-transparent">
+          <button class="p-0 hover:bg-transparent text-xs lg:text-base">
             <img src="/public/images/triangle-shape.svg" />
           </button>
         </article>
         <article
-          class="absolute -top-14 rotate-[37.5deg] left-12 w-64 p-0 hover:bg-transparent z-20"
+          class="absolute -left-[6em] -top-[2em] lg:-top-14 rotate-[37.5deg] lg:left-12 w-32 md:w-48 lg:w-64 p-0 hover:bg-transparent z-20"
         >
           <button class="p-0 hover:bg-transparent">
             <img src="/public/images/triangle-shape-second.svg" />
           </button>
         </article>
         <article
-          class="absolute -top-40 left-0 right-0 mx-auto w-64 p-0 hover:bg-transparent z-20"
+          class="absolute -top-[8em] lg:-top-40 left-0 right-0 mx-auto w-32 md:w-48 lg:w-64 p-0 hover:bg-transparent z-20"
         >
           <button class="rotate-[90deg] p-0 hover:bg-transparent">
             <span> Jak zamówić Wiem i Powiem? </span>
@@ -42,7 +42,9 @@
             Czy zgłoszenia muszą być anonimowe?
           </h4>
         </article>
-        <article class="absolute -top-8 right-20 w-64 z-20">
+        <article
+          class="absolute lg:-top-8 lg:right-20 w-32 md:w-48 lg:w-64 z-20"
+        >
           <button class="rotate-[142.5deg] p-0 hover:bg-transparent">
             <img src="/public/images/triangle-shape-second.svg" />
           </button>
@@ -52,7 +54,9 @@
             Czy zgłoszenia muszą być anonimowe?
           </h4>
         </article>
-        <article class="absolute top-48 right-14 w-64 z-40">
+        <article
+          class="absolute lg:top-48 lg:right-14 w-32 md:w-48 lg:w-64 z-40"
+        >
           <button
             class="relative rotate-[195deg] p-0 hover:bg-transparent z-40"
           >
@@ -65,7 +69,7 @@
           </h4>
         </article>
         <img
-          class="absolute -left-32 top-44 z-10"
+          class="absolute inset-0 lg:-left-32 top-44 z-10"
           src="/public/images/przedsiebiorca.webp"
         />
       </section>

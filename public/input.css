@@ -6,30 +6,27 @@
 /* Basic styling */
 body {
   font-family: Poppins;
-  font-size: 20px;
 }
 h1 {
   font-family: Poppins;
-  @apply text-[72px] lg:text-[96px] uppercase font-black my-12;
+  @apply text-[32px] md:text-[64px] lg:text-[96px] uppercase font-black mt-4 lg:my-12;
 }
 
 h2 {
   font-family: Montserrat;
-  @apply text-3xl lg:text-4xl font-bold my-4 lg:leading-12;
+  @apply text-xl lg:text-4xl font-bold mt-2 lg:my-4 lg:leading-12;
 }
-
 h3 {
   font-family: Poppins;
-  @apply text-2xl lg:text-3xl font-bold my-2;
+  @apply text-lg lg:text-3xl font-bold my-2 lg:my-4;
 }
 p {
-  @apply my-4 lg:leading-10;
+  @apply text-[12px] md:text-[16px] lg:text-[20px] my-2 lg:my-4 lg:leading-10;
 }
-
 a,
 button {
   font-family: Montserrat;
-  @apply text-2xl w-fit p-4 rounded-full px-8  uppercase cursor-pointer font-black leading-4 hover:bg-theme-yellow focus:bg-theme-yellow focus:border-none focus:outline-none;
+  @apply text-base lg:text-2xl w-fit p-4 rounded-full px-8  uppercase cursor-pointer font-black leading-4 hover:bg-theme-yellow focus:bg-theme-yellow focus:border-none focus:outline-none;
 }
 input,
 textarea {
@@ -141,7 +138,7 @@ textarea {
   @apply relative;
 }
 #fourth-section-container {
-  @apply container relative px-4 py-12 mb-72;
+  @apply container relative px-4 py-12 lg:min-h-[88em];
 }
 #fourth-section-overlay {
   @apply absolute inset-0;
@@ -149,8 +146,30 @@ textarea {
 #fourth-section-overlay img {
   @apply hidden lg:flex absolute -top-48 right-24 max-w-[512px] z-10;
 }
-#fourth-section #bubbles {
-  @apply grid grid-cols-2 lg:flex w-[1275px] translate-x-4 mx-auto lg:flex-col gap-12 bg-cover pt-12 z-40;
+#fourth-section #bubbles-desktop {
+  @apply relative hidden lg:flex flex-col gap-4 w-[1275px] translate-x-4 pt-12 z-40 mx-auto pb-48;
+}
+#fourth-section #bubbles-desktop .bubble {
+  @apply hidden relative bg-theme-purple-lighter rounded-full p-12 w-72 h-72 lg:flex items-center text-center text-white justify-center mx-auto hover:bg-theme-yellow;
+}
+#fourth-section #bubbles-desktop .bubble h1 {
+  @apply hidden bg-theme-cyan absolute -bottom-28 p-4 w-24 h-24 text-5xl lg:flex items-center justify-center text-white rounded-full;
+}
+#fourth-section #bubbles-desktop .first-row {
+  @apply grid grid-cols-4 gap-8 items-center justify-center;
+}
+#fourth-section #bubbles-desktop .second-row {
+  @apply flex flex-col lg:grid lg:grid-cols-3 lg:w-[970px] gap-8 lg:-translate-x-3 lg:-translate-y-4 lg:mx-auto;
+}
+
+#fourth-section #bubbles-mobile {
+  @apply lg:hidden flex flex-col gap-4 pt-12 z-40 mx-auto;
+}
+#fourth-section #bubbles-mobile .bubble {
+  @apply relative bg-theme-purple-lighter rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto hover:bg-theme-yellow;
+}
+#fourth-section #bubbles-mobile .bubble h1 {
+  @apply bg-theme-cyan absolute -bottom-8 p-4 w-24 h-24 text-5xl flex items-center justify-center text-white rounded-full;
 }
 
 /* Home - Fifth section */
