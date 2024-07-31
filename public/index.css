@@ -1572,7 +1572,7 @@ textarea {
 
 #first-section .circle-half {
   position: absolute;
-  bottom: -8rem;
+  bottom: -3rem;
   left: 50%;
   height: 3rem;
   width: 6rem;
@@ -1584,16 +1584,28 @@ textarea {
   background-color: rgb(185 133 249 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 1024px) {
+  #first-section .circle-half {
+    bottom: -8rem;
+  }
+}
+
 #first-section .bricks {
   position: absolute;
   inset: 0px;
-  top: 1rem;
+  top: -1rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   width: 100%;
-  max-width: 128px;
+  max-width: 256px;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #first-section .bricks {
+    max-width: 364px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1605,7 +1617,7 @@ textarea {
 
 #first-section .bricks .brick {
   z-index: 10;
-  margin-bottom: -0.75rem;
+  margin-bottom: -0.25rem;
   --tw-rotate: -15deg;
   --tw-skew-x: -15deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1639,7 +1651,7 @@ textarea {
 #first-section #photo {
   position: absolute;
   inset: 0px;
-  top: -2rem;
+  top: -3rem;
   z-index: 50;
   margin-left: auto;
   margin-right: auto;
@@ -1724,9 +1736,15 @@ textarea {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #second-section .cards {
     display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  #second-section .cards {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
@@ -2396,8 +2414,15 @@ textarea {
 
 #seventh-section-contact-info {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  #seventh-section-contact-info {
+    flex-direction: column;
+  }
 }
 
 #seventh-section-company-info {
