@@ -1639,22 +1639,22 @@ textarea {
 #first-section #photo {
   position: absolute;
   inset: 0px;
-  top: -1rem;
+  top: -2rem;
   z-index: 50;
   margin-left: auto;
   margin-right: auto;
   width: 66.666667%;
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   #first-section #photo {
-    top: -3rem;
-    --tw-scale-x: 1.25;
-    --tw-scale-y: 1.25;
+    top: -4rem;
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
