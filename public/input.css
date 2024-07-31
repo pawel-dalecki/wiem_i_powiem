@@ -3,9 +3,13 @@
 @tailwind utilities;
 @tailwind variants;
 
+html {
+  overflow-x: hidden;
+}
 /* Basic styling */
 body {
   font-family: Poppins;
+  overflow-x: hidden;
 }
 h1 {
   font-family: Poppins;
@@ -53,7 +57,7 @@ textarea {
   @apply container p-4 mx-auto flex gap-2 justify-between items-center z-[999] bg-transparent;
 }
 #header-container #logo {
-  @apply hover:bg-transparent focus:bg-transparent rounded-none w-1/2;
+  @apply hover:bg-transparent focus:bg-transparent rounded-none w-1/2 p-0 flex items-center justify-start;
 }
 #header-container a.link {
   @apply rounded-full bg-theme-purple-lightest p-2 px-8 text-white focus:bg-theme-purple focus:text-theme-cyan hover:bg-theme-purple hover:text-theme-cyan z-[999];
@@ -73,6 +77,9 @@ textarea {
 #first-section .second-column {
   @apply relative hidden lg:flex items-center justify-center;
 }
+#first-section .first-column .heading {
+  @apply grid grid-cols-2;
+}
 #first-section #logo {
   @apply w-1/2;
 }
@@ -83,19 +90,19 @@ textarea {
   @apply rounded-tl-full rounded-tr-full bg-theme-purple-lightest absolute h-12 w-24 rotate-90 -bottom-32 left-1/2;
 }
 #first-section .bricks {
-  @apply absolute top-28 inset-0 max-w-[512px] mx-auto flex flex-col w-full;
+  @apply absolute top-4 lg:top-28 inset-0 max-w-[128px] lg:max-w-[512px] mx-auto flex flex-col w-full;
 }
 #first-section .bricks .brick {
-  @apply -mb-6 p-20 z-10 skew-x-[-15deg] rotate-[-15deg];
+  @apply -mb-3 md:-mb-4 lg:-mb-6 p-6 md:p-16 lg:p-20 z-10 skew-x-[-15deg] rotate-[-15deg];
 }
 #first-section .bricks .brick.bg-theme-purple-lighter {
   @apply rotate-[15deg] skew-x-[15deg];
 }
 #first-section .bricks .brick:last-child {
-  @apply z-[999];
+  @apply z-[99];
 }
 #first-section #photo {
-  @apply z-50 w-2/3 absolute -top-28 inset-0 mx-auto bg-cover;
+  @apply z-50 w-2/3 absolute -top-4 md:-top-12 lg:-top-28 inset-0 mx-auto bg-cover;
 }
 
 /* Home - Second section */
@@ -112,7 +119,7 @@ textarea {
   @apply flex flex-col gap-4;
 }
 #second-section .cards .card img {
-  @apply scale-150;
+  @apply scale-125 md:scale-150;
 }
 
 /* Home - Third section */
@@ -165,7 +172,7 @@ textarea {
 }
 
 #fourth-section #bubbles-mobile {
-  @apply lg:hidden flex flex-col gap-4 pt-12 z-40 mx-auto;
+  @apply lg:hidden flex flex-col gap-12 pt-12 z-40 mx-auto;
 }
 #fourth-section #bubbles-mobile .bubble {
   @apply relative bg-theme-purple-lighter rounded-full p-12 w-72 h-72 flex items-center text-center text-white justify-center mx-auto hover:bg-theme-yellow;
@@ -210,7 +217,7 @@ textarea {
   @apply relative z-[999] bg-theme-purple text-white;
 }
 #seventh-section-container {
-  @apply container mx-auto px-4 py-12 flex flex-col lg:grid lg:grid-cols-2 gap-2;
+  @apply container mx-auto px-4 py-12 flex flex-col lg:grid lg:grid-cols-2 gap-8;
 }
 #seventh-section #contact-form {
   @apply flex flex-col gap-4;
@@ -218,7 +225,15 @@ textarea {
 #seventh-section #contact-form form {
   @apply flex flex-col gap-4;
 }
-
+#seventh-section-contact-info {
+  @apply flex flex-col gap-2;
+}
+#seventh-section-company-info {
+  @apply flex flex-col gap-2;
+}
+#seventh-section form button {
+  @apply bg-theme-cyan hover:bg-theme-yellow;
+}
 /* Privacy */
 
 /* Blog - Page */

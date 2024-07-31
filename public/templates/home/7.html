@@ -1,12 +1,14 @@
 <section id="seventh-section">
   <section id="seventh-section-container">
-    <section class="flex flex-col gap-2">
-      <h1>Kontakt</h1>
-      <span>Wiem i Powiem sp. z o.o.</span>
-      <span>ul. Żydowska 33/2,</span>
-      <span>61-761 Poznań</span>
-      <span>telefon: xxx xxx xxx</span>
-      <span>email: kontakt@wiemipowiem.pl</span>
+    <section id="seventh-section-contact-info">
+      <section id="seventh-section-company-info">
+        <h1>Kontakt</h1>
+        <span>Wiem i Powiem sp. z o.o.</span>
+        <span>ul. Żydowska 33/2,</span>
+        <span>61-761 Poznań</span>
+        <span>telefon: xxx xxx xxx</span>
+        <span>email: kontakt@wiemipowiem.pl</span>
+      </section>
       <img src="/public/images/kontakt.webp" class="w-1/3 mt-4" />
     </section>
     <section id="contact-form">
@@ -15,12 +17,17 @@
         <input placeholder="nazwisko" />
         <input placeholder="adres e-mail" />
         <textarea rows="8" placeholder="uwagi"></textarea>
-        <button class="bg-theme-cyan">Wyślij</button>
+        <button>Wyślij</button>
       </form>
       <span
         >Dane osobowe podane w formularzu przetwarzane są w celu obsługi
         korespondencji, a ich administratorem jest Wiem i Powiem sp. z o. o.
-        Więcej szczegółów w Polityce Prywatności</span
+        Więcej szczegółów w
+        <a
+          href="/polityka-prywatnosci"
+          class="normal-case text-base p-0 bg-transparent hover:bg-transparent"
+          >Polityce Prywatności</a
+        ></span
       >
     </section>
   </section>
