@@ -89,20 +89,8 @@ textarea {
 #first-section .circle-half {
   @apply rounded-tl-full rounded-tr-full bg-theme-purple-lightest absolute h-12 w-24 rotate-90 -bottom-12 lg:-bottom-32 left-1/2;
 }
-#first-section .bricks {
-  @apply absolute -top-4 lg:top-28 inset-0 max-w-[256px] md:max-w-[364px] lg:max-w-[512px] mx-auto flex flex-col w-full;
-}
-#first-section .bricks .brick {
-  @apply -mb-1 md:-mb-4 lg:-mb-6 p-6 md:p-16 lg:p-20 z-10 skew-x-[-15deg] rotate-[-15deg];
-}
-#first-section .bricks .brick.bg-theme-purple-lighter {
-  @apply rotate-[15deg] skew-x-[15deg];
-}
-#first-section .bricks .brick:last-child {
-  @apply z-[99];
-}
 #first-section #photo {
-  @apply z-50 w-2/3 absolute -top-12 md:-top-16 lg:-top-28 inset-0 mx-auto bg-cover scale-125 md:scale-110 lg:scale-100;
+  @apply z-50 w-5/6 lg:w-2/3 absolute -top-8 md:-top-12 lg:-top-24 inset-0 mx-auto bg-cover scale-125 md:scale-110 lg:scale-100;
 }
 
 /* Home - Second section */
@@ -170,7 +158,6 @@ textarea {
 #fourth-section #bubbles-desktop .second-row {
   @apply flex flex-col lg:grid lg:grid-cols-3 lg:w-[970px] gap-8 lg:-translate-x-3 lg:-translate-y-4 lg:mx-auto;
 }
-
 #fourth-section #bubbles-mobile {
   @apply lg:hidden flex flex-col gap-12 pt-12 z-40 mx-auto;
 }
@@ -212,6 +199,39 @@ textarea {
 #fifth-section .first-card .heading h2 {
   @apply m-0 text-xl font-black;
 }
+
+.shape-second:hover,
+.shape-first:hover {
+  @apply cursor-pointer;
+}
+.shape-first .main {
+  @apply fill-[#bb86fb];
+}
+.shape-first:hover .main {
+  @apply fill-theme-cyan;
+}
+
+.shape-first .edge {
+  @apply fill-[#a060fc];
+}
+.shape-first:hover .edge {
+  @apply fill-[#04b5a0];
+}
+
+.shape-second .main {
+  @apply fill-[#6200ed];
+}
+.shape-second:hover .main {
+  @apply fill-theme-cyan;
+}
+
+.shape-second .edge {
+  @apply fill-[#5402d3];
+}
+.shape-second:hover .edge {
+  @apply fill-[#04b5a0];
+}
+
 /* Home - Seventh section*/
 #seventh-section {
   @apply relative z-[999] bg-theme-purple text-white;
@@ -234,6 +254,7 @@ textarea {
 #seventh-section form button {
   @apply bg-theme-cyan hover:bg-theme-yellow;
 }
+
 /* Privacy */
 
 /* Blog - Page */

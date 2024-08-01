@@ -74,16 +74,18 @@ for (let template = 1; template <= currentTemplate.templates; template++) {
 }
 await injectTemplate(undefined, 'footer', undefined, false);
 
-const image = document.querySelector("#photo");
+const image = document.querySelectorAll("#photo");
 function changePhoto() {
-  if (image.src.includes("magazynier")) {
-    image.src = "/public/images/nauczyciel.webp"
-  } else if (image.src.includes("nauczyciel")) {
-    image.src = "public/images/lekarz.webp"
-  } else if (image.src.includes("lekarz")) {
-    image.src = "public/images/pracownik-biurowy.webp"
-  } else if (image.src.includes("pracownik-biurowy")) {
-    image.src = "public/images/magazynier.webp"
+  for (const i of image) {
+    if (i.src.includes("magazynier")) {
+      i.src = "/public/images/nauczyciel.webp"
+    } else if (i.src.includes("nauczyciel")) {
+      i.src = "public/images/lekarz.webp"
+    } else if (i.src.includes("lekarz")) {
+      i.src = "public/images/pracownik-biurowy.webp"
+    } else if (i.src.includes("pracownik-biurowy")) {
+      i.src = "public/images/magazynier.webp"
+    }
   }
 }
 
@@ -99,3 +101,5 @@ for (const b of faqButtons) {
     b.toggleAttribute("original-src");
   })
 }
+
+window.hello = () => { console.log("hello") }
