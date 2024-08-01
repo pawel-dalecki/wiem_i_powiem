@@ -293,7 +293,7 @@ textarea {
   @apply z-[999];
 }
 #blog-page #photo {
-  @apply z-50 w-2/3 absolute -top-28 inset-0 mx-auto bg-cover;
+  @apply z-50 w-2/3 absolute -top-24 inset-0 mx-auto bg-cover;
 }
 
 /* Blog - Article */

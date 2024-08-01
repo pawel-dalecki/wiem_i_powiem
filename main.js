@@ -1,3 +1,4 @@
+import { _GET_REQUEST, _POST_REQUEST } from "./public/db.js";
 const templates = [
   {
     url: "/",
@@ -103,3 +104,32 @@ for (const b of faqButtons) {
 }
 
 window.hello = () => { console.log("hello") }
+
+if (pathname.includes("blog")) {
+  const data = [{ snippet: "Hello world" }, { snippet: "Somethin" }, { snippet: "Hello" }];
+  for (const b of data) {
+    const article = document.createElement("article");
+    article.classList.add("relative", "grid", "grid-cols-2", "gap-4")
+    const date = document.createElement("article");
+    date.classList.add("absolute", "-top-4", "-left-4")
+    const image = document.createElement("img");
+    image.src = "/public/images/blog-dummy.webp";
+    const title = document.createElement("h3");
+    title.innerText = b.title;
+    const snippet = document.createElement("p");
+    snippet.innerText = b.snippet
+    const button = document.createElement("button");
+    button.classList.add("absolute", "bg-theme-cyan", "bottom-0", "right-0")
+    const heading = document.createElement("section");
+    heading.classList.add("relative")
+    const content = document.createElement("section");
+    const dateImage = document.createElement("img");
+    dateImage.src = "/public/images/date.webp";
+    date.append(dateImage);
+    heading.append(date, image, button);
+    content.append(title, snippet);
+    article.append(heading, content);
+    document.querySelector("#blog-grid").append(article);
+  }
+}
+

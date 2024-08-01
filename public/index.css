@@ -600,6 +600,10 @@ video {
   inset: 0px;
 }
 
+.-left-\[2\.5rem\] {
+  left: -2.5rem;
+}
+
 .-top-12 {
   top: -3rem;
 }
@@ -642,10 +646,6 @@ video {
 
 .top-\[8em\] {
   top: 8em;
-}
-
-.-left-\[2\.5rem\] {
-  left: -2.5rem;
 }
 
 .z-10 {
@@ -715,6 +715,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -2459,7 +2463,7 @@ textarea {
 #blog-page #photo {
   position: absolute;
   inset: 0px;
-  top: -7rem;
+  top: -6rem;
   z-index: 50;
   margin-left: auto;
   margin-right: auto;
